@@ -17,7 +17,13 @@ const controller = {
 			toThousand
 		})
 	},
-
+	oferProducts : (req,res) =>{
+		const productsOffer = products.filter(product => product.category === 'in-sale')
+		res.render('productsOffer',{
+		productsOffer,
+		toThousand
+		})
+	},
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
@@ -45,7 +51,7 @@ const controller = {
 			description: description.trim(),
 			price: +price,		
 			discount: +discount,
-			image: null,
+            image : req.file? req.file.filename : null,
 			category: category
 		}
 

@@ -31,11 +31,11 @@
 
               <% if (discount) { %>
               <p class="product-detail-price small">
-                <span><%= toThousand(price) %></span>
+                <span> $ <%= toThousand(price) %></span>
                 <b><%= discount %>% OFF</b>
               </p>
               <p class="product-detail-price">
-                <%= toThousand(price - (price * discount) / 100) %>
+                $<%= toThousand(price - (price * discount) / 100) %>
               </p>
               <% }else{ %>
               <p class="product-detail-price"><%= toThousand(price) %></p>
