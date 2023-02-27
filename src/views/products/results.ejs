@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title: 'Resultados de tu búsqueda'}) %>
+<%- include('../partials/head', {title: 'Resultados de tu búsqueda'}) %>
 <body>
 	<!-- Header -->
-	<%- include('partials/headerNavbar') %>
+	<%- include('../partials/headerNavbar') %>
 	<!-- /Header -->
 	
 	<!-- Banner -->
@@ -19,7 +19,7 @@
 			</div>
 			<% if (productFilter.length) { %>
 			 	<% productFilter.forEach(({name,discount,description,price,image,id}) => { %>
-			 	<%- include('./partials/product',{
+			 	<%- include('../partials/product',{
 						name,
 						discount,
 						description,
@@ -41,7 +41,7 @@
 	<!-- /todos los productos -->
 
 	<!-- footer -->
-	<%- include('partials/footer') %>
+	<%- include('../partials/footer') %>
 	<!-- /footer -->
 </body>	
 </html>

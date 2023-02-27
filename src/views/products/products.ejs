@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title: 'Todos los productos'}) %>
+<%- include('../partials/head', {title: 'Todos los productos'}) %>
 <body>
 	<!-- Header -->
-	<%- include('partials/headerNavbar') %>
+	<%- include('../partials/headerNavbar') %>
 	<!-- /Header -->
 
 	<!-- todos los productos -->
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Todos los productos en oferta!</h2>
+				<h2 class="products-title">Todos los productos</h2>
 			</div>
-		<% productsOffer.forEach(({id,name,description,image,price,discount}) => { %>
-			<%- include('./partials/product',{
+		<% products.forEach(({id,name,description,image,price,discount}) => { %>
+			<%- include('../partials/product',{
 				id,
 				name,
 				description,
@@ -30,7 +30,7 @@
 	<!-- /todos los productos -->
 
 	<!-- footer -->
-	<%- include('partials/footer') %>
+	<%- include('../partials/footer') %>
 	<!-- /footer -->
 </body>	
 </html>

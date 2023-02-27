@@ -12,14 +12,14 @@ const controller = {
 	index: (req, res) => {
 		const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-		return res.render("products",{
+		return res.render("products/products",{
 			products,
 			toThousand
 		})
 	},
 	oferProducts : (req,res) =>{
 		const productsOffer = products.filter(product => product.category === 'in-sale')
-		res.render('productsOffer',{
+		res.render('products/productsOffer',{
 		productsOffer,
 		toThousand
 		})
@@ -30,7 +30,7 @@ const controller = {
 		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		const {id} = req.params
 		const product = products.find((product) => product.id === +id)
-		return res.render('detail',{
+		return res.render('products/detail',{
 			...product,
 			toThousand
 		})
@@ -38,7 +38,7 @@ const controller = {
 
 	// Create - Form to create
 	create: (req, res) => {
-		return res.render('product-create-form')
+		return res.render('products/product-create-form')
 	},
 	
 	// Create -  Method to store
@@ -64,7 +64,7 @@ const controller = {
 	edit: (req, res) => {
 		const {id} = req.params
 		const product = products.find((product) => product.id === +id)
-		return res.render('product-edit-form',{
+		return res.render('products/product-edit-form',{
 			...product,
 		})
 	},

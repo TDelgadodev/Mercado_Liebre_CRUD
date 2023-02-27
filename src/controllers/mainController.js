@@ -29,7 +29,7 @@ const controller = {
         product.description.toLowerCase().includes(keywords.toLowerCase())
     );
 
-    res.render("results", {
+    res.render("products/results", {
 		productFilter,
 		toThousand,
 		keywords
