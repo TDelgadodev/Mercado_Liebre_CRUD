@@ -1,0 +1,10 @@
+[
+   {
+      "id": 1,
+      "name": "thiago",
+      "surname": "delgado",
+      "email": "thiagodelgado.dev@gmail.com",
+      "password": "$2a$12$/FPAFCxhphrele10rBhiZOR/j9w0R.mZ18gApMWOSldLnQVG3Bvp2",
+      "rol": "user"
+   }
+]

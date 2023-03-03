@@ -38,21 +38,27 @@
                         value="<%= locals.old && old.email ? old.email : null %>"
                         class="form-input form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                         id="email" name="email"/>
-                        <small id="errorEmail" class="text-danger"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                        <small class="text-danger ms-2"
+                        ><%= locals.errors && errors.email ? errors.email.msg :
+                        null%></small>
                       </div>
                     <div class="col-12 col-md-6">
                         <label for="pass" class="form-label">Contraseña</label>
                         <input type="password"
-                        class="form-input form-control <%= locals.errors && errors.pass ? 'is-invalid' : null %>" name="pass" id="pass"/>
-                        <small id="errorPass" class="text-danger"><%= locals.errors && errors.pass ? errors.pass.msg : null %></small>
+                        class="form-input form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" name="password" id="password"/>
+                        <small class="text-danger ms-2"
+                        ><%= locals.errors && errors.password ? errors.password.msg :
+                        null%></small>
                       </div>
 
                       <div class="col-12 col-md-6">
-                        <label for="pass2" class="form-label">Reingresar contraseña</label>
+                        <label for="password2" class="form-label">Reingresar contraseña</label>
                         <input type="password"
-                        class="form-input form-control <%= locals.errors && errors.pass2 ? 'is-invalid' : null %>"
-                        id="pass2" name="pass2"/>
-                        <small id="errorPass2" class= "text-danger"><%= locals.errors && errors.pass2 ? errors.pass2.msg : null %></small>
+                        class="form-input form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>"
+                        id="password2" name="password2"/>
+                        <small class="text-danger ms-2"
+                        ><%= locals.errors && errors.password2 ? errors.password2.msg :
+                        null%></small>
 
                       </div>
                       <div class="col-12 col-md-6 d-flex justify-content-center">

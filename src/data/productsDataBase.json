@@ -142,23 +142,5 @@
       "category": "in-sale",
       "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
       "image": "img-parlante-sony.jpg"
-   },
-   {
-      "id": 17,
-      "name": "Ferrari",
-      "description": "Ultimo ferrari del momento, mas veloz que superman, mas hermoso que el amor de tu vida, y tanta velocidad que es capaz de hacer una vuelta al mundo en 30 dias",
-      "price": 2000000,
-      "discount": 15,
-      "image": "1676577592232_products_.jpeg",
-      "category": "in-sale"
-   },
-   {
-      "id": 18,
-      "name": "Bugatti Veyron",
-      "description": "Cuenta con un motor W16 basado en dos bloques de 8 cilindros en \"V\" estrecha. Cuando le pido al jefe de desarrollo Bugatti Wolfgang Schreiber explicar cómo el mismo motor puede ser clasificado en 1001 SAE de potencia neta a las 6000 rpm en Estados Unidos,",
-      "price": 5000000,
-      "discount": 5,
-      "image": "1676578403421_products_.jpg",
-      "category": "in-sale"
    }
 ]
