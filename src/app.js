@@ -6,6 +6,7 @@ const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); 
 const localUserCheck = require('./middlewares/localUserCheck');
+const cookieCheck = require('./middlewares/cookieCheck');
 const session = require('express-session');
 
 
@@ -24,7 +25,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true
   })
-) 
+)
+app.use(cookieCheck) 
 app.use(localUserCheck)
 
 // ************ Template Engine - (don't touch) ************

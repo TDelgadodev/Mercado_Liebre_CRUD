@@ -58,7 +58,9 @@ module.exports = {
                 name,
                 rol
             };
-            console.log(req.session);         
+        if (req.body.remember) {
+            res.cookie('userML', req.session.userLogin, {max: 1000 * 60})
+        }
             return res.redirect('/')
         }else{
             return res.render('users/login',{
